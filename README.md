@@ -3,4 +3,37 @@ Generates an image that consists of red, blue and green pixels randomly generate
 
 I wrote this code in an attempt to build a logo for the [quantum chessboard](https://github.com/SEDSCelestiaBPGC/quantum-chess.git).
 
-### How to use this
+
+### Requirements
+**Qiskit** (supported by Python 3.5 or later)
+
+Get it by running the following command
+```
+pip install qiskit
+```
+
+**Pygame**
+
+Get it by running the following command
+```
+pip install pygame
+```
+
+### How to use this code
+Run the `Random_colours.py` file on the [IBM Quantum Experience](https://quantum-computing.ibm.com/). This should take about 5 minutes to give you a result, since we are generating 40,000 random numbers using the quantum circuit!
+
+Copy and paste the output into the `generated_cols` list in the file `QuantumLogo.py`.
+
+Run! You should find a file named `Colour.jpeg` saved in the directory where `QuantumLogo.py` is saved.
+
+The current circuit is set to a probability of 25%, 37.5% and 37.5 for r,g,b respectively. That means that the generated image should approximate this colour, which has an rgb value of (64, 96, 96):
+[rgbexpected]()
+
+This is what we get:
+[rgb got]()
+
+It's not a great result, but I was still proud :)
+
+Feel free to play around with the circuit to approximate the colour that you want by checking the rgb code and computing the relative measure of each r/g/b value and mapping it to an output state. You can also change the order of elements in `clrs` for convenience. (It's currently set to [r,g,b]).
+
+Have fun!
