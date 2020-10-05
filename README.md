@@ -3,6 +3,9 @@ Generates an image that consists of red, blue and green pixels randomly generate
 
 I wrote this code in an attempt to build a logo for the [quantum chessboard](https://github.com/SEDSCelestiaBPGC/quantum-chess.git).
 
+### What the code does
+
+Generates an approximation to the colour you want using randomly generated red/blue/green dots generated with the probability of the ratio of the colour in its hex code. The generation is truly random as it is done using a [quantum random number generator](https://quantumcomputinguk.org/tutorials/16-qubit-random-number-generator) run on the [IBM Quantum Experience](https://quantum-computing.ibm.com/). This makes this code a very basic application of a QRNG.
 
 ### Requirements
 
@@ -19,10 +22,6 @@ Get it by running the following command
 ```
 pip install pygame
 ```
-
-### What the code does
-
-Generates an approximation to the colour you want using randomly generated red/blue/green dots generated with the probability of the ratio of the colour in its hex code. The generation is truly random as it is done using a [quantum random number generator](https://quantumcomputinguk.org/tutorials/16-qubit-random-number-generator) run on the [IBM Quantum Experience](https://quantum-computing.ibm.com/). This makes this code a very basic application of a QRNG.
 
 ### How to use this code
 
