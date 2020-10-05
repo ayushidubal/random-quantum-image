@@ -27,10 +27,10 @@ Copy and paste the output into the `generated_cols` list in the file `QuantumLog
 Run! You should find a file named `Colour.jpeg` saved in the directory where `QuantumLogo.py` is saved.
 
 The current circuit is set to a probability of 25%, 37.5% and 37.5 for r,g,b respectively. That means that the generated image should approximate this colour, which has an rgb value of (64, 96, 96):
-[rgbexpected]()
+
 
 This is what we get:
-[rgb got]()
+
 
 It's not a great result, but I was still proud :)
 
