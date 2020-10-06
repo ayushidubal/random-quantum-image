@@ -16,4 +16,4 @@ for i in range(200):
     for j in range(200):
         pygame.draw.rect(board, clrs[generated_cols[(200*i)+j]], ((i*1), (j*1), 1, 1))
 
-pygame.image.save(board, "BackgroundNew1.jpeg")
+pygame.image.save(board, "Colour.jpeg")
