@@ -7,7 +7,7 @@ This code was written in an attempt to build a logo for the [quantum chessboard]
 
 Generates an approximation to the colour you want using randomly generated red/blue/green dots generated with the probability of the ratio of the colour in its hex code. The generation is truly random as it is done using a [quantum random number generator](https://quantumcomputinguk.org/tutorials/16-qubit-random-number-generator) run on the [IBM Quantum Experience](https://quantum-computing.ibm.com/). This makes this code a very basic application of a QRNG.
 
-This how it works:
+This is how it works:
 
 Let the square I want to fill with a certain colour with an rgb value of (x,y,z) be divided into 40,000 small squares. Let's call them dots. The ratio of red, green and blue dots in the image should be x:y:z. Each of the 40,000 numbers assigns a certain colour- red, green or blue randomly to the respective dot, generated with the corresponding probability, which is set by the quantum circuit. Thus, the average ratio across the whole image is approximately x:y:z and matches the rgb value of the colour.
 
